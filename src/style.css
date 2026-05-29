@@ -249,7 +249,14 @@ main section {
     text-decoration: none;
 }
 
-.publication-card a:hover {
+.text-link {
+    color: var(--accent-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.publication-card a:hover,
+.text-link:hover {
     text-decoration: underline;
 }
 
@@ -340,4 +347,3 @@ footer p {
         width: 100%;
     }
 }
-
