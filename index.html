@@ -3,82 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yanxin Huang | Portfolio</title>
+    <meta name="description" content="Yanxin Huang portfolio for medical AI, computer vision, medical image segmentation, and MRI reconstruction research.">
+    <title>Yanxin Huang | Medical AI Portfolio</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="top-nav" aria-label="Main navigation">
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#publication">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <header>
-        <div class="container">
+        <div class="hero">
             <img src="assets/images/research-banner.png" alt="Medical AI research banner" class="research-banner">
-            <h1>Greetings, I'm <span class="name">Yanxin Huang</span></h1>
-            <p>Medical image analysis, computer vision, and machine learning research.</p>
+            <p class="eyebrow">Medical AI 路 Computer Vision 路 MRI Analysis</p>
+            <h1>Yanxin Huang</h1>
+            <p class="hero-copy">
+                Research-focused developer exploring robust medical image segmentation,
+                synthesis, and reconstruction from incomplete or limited data.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="button primary">View Work</a>
+                <a href="https://orcid.org/0009-0003-2264-7753" class="button">ORCID</a>
+            </div>
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="assets/images/portrait.jpg" alt="Portrait of Yanxin Huang" class="profile-photo">
-         <p>I am a master's student.</p>
-         <p>I specialize in mathematics and applied mathematics, machine learning, computer vision, medical image processing, tumor segmentation, image fusion, and 3D cardiac reconstruction.</p>
-         <p>My current work connects segmentation, synthesis, reconstruction, and robust learning from incomplete medical imaging data.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Tumor Segmentation & Image Generation</h3>
-                <p>The diagnosis of brainstem gliomas is a high-cost task in clinical practice, and acquiring high-quality diagnostic image data can be difficult. Fast image generation, accurate lesion segmentation, and robust segmentation under incomplete data conditions are important for clinical diagnosis.</p>
-                <img src="assets/images/mri-input.jpg" alt="MRI image example" class="pro-photo">
-                <img src="assets/images/mri-segmentation-result.jpg" alt="Tumor segmentation result" class="pro-photo">
+    <main>
+        <section id="research" class="split-section">
+            <div>
+                <h2>Research Profile</h2>
+                <p>
+                    I specialize in mathematics and applied mathematics, machine
+                    learning, computer vision, medical image processing, tumor
+                    segmentation, image fusion, and 3D cardiac reconstruction.
+                </p>
+                <p>
+                    My current work connects segmentation, synthesis, reconstruction,
+                    and robust learning from incomplete medical imaging data.
+                </p>
             </div>
-            <div class="project">
-                <h3>3D Cardiac Reconstruction</h3>
-                <p>Multi-contrast cardiac magnetic resonance imaging (CMR) provides valuable information for assessing cardiac structure and function, but acquiring multiple contrast-weighted images increases scan time and patient discomfort. This project studies efficient reconstruction methods for accelerated and high-quality multi-contrast CMR imaging.</p>
-                <img src="assets/images/cmr-model.jpg" alt="Cardiac MRI reconstruction model" class="pro-photo-1">
-                <img src="assets/images/cmr-reconstruction-result.jpg" alt="Cardiac MRI reconstruction result" class="pro-photo">
+            <div class="profile-panel">
+                <img src="assets/images/portrait.jpg" alt="Portrait of Yanxin Huang" class="profile-photo">
+                <ul class="focus-list">
+                    <li>Self-supervised medical image segmentation</li>
+                    <li>Brainstem glioma image synthesis and segmentation</li>
+                    <li>Multi-contrast cardiac MRI reconstruction</li>
+                    <li>Missing-modality learning and robust representation</li>
+                </ul>
             </div>
-            <div class="project">
-                <h3>Diffusion-guided model in missing modality</h3>
-                <p>Brain tumor segmentation plays a critical role in clinical diagnosis and treatment. This project explores diffusion-guided multi-modal segmentation for MRI cases with missing or unavailable imaging modalities, improving model robustness and segmentation quality under incomplete data conditions.</p>
-                <img src="assets/images/diffusion-model.jpg" alt="Diffusion-guided segmentation model" class="pro-photo-2">
-                <img src="assets/images/diffusion-segmentation-result.jpg" alt="Diffusion-guided segmentation result" class="pro-photo">
+        </section>
+
+        <section id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Research Themes</p>
+                <h2>Projects</h2>
             </div>
-        </div>
-    </section>
+            <div class="project-grid">
+                <article class="project">
+                    <img src="assets/images/mri-segmentation-result.jpg" alt="Tumor segmentation result" class="project-cover">
+                    <div class="project-body">
+                        <p class="tag">Brain MRI</p>
+                        <h3>Tumor Segmentation & Image Generation</h3>
+                        <p>
+                            Generating useful MR image information and segmenting lesion
+                            regions for brainstem glioma diagnosis under limited or
+                            incomplete imaging conditions.
+                        </p>
+                    </div>
+                </article>
 
-    <section id="publication">
-        <h2>Publications</h2>
-        <ul>
-        <li>
-            <h3>A multi-task generative model for simultaneous post-contrast MR image synthesis and brainstem glioma segmentation</h3>
-            <p>This study aims to generate post-contrast MR images while reducing exposure to gadolinium-based contrast agents for brainstem glioma detection. It also delineates BSG lesions and provides high-resolution contrast information.</p>
-            <a href="https://doi.org/10.1016/j.mri.2024.07.009" target="_blank">Read More</a>
-        </li>
-        <li>
-            <h3>A Multi-Contrast Cardiac MRI Reconstruction Method Using an Advanced Unrolled Network Architecture (Accepted)</h3>
-        </li>
-        </ul>
+                <article class="project">
+                    <img src="assets/images/cmr-reconstruction-result.jpg" alt="Cardiac MRI reconstruction result" class="project-cover">
+                    <div class="project-body">
+                        <p class="tag">Cardiac MRI</p>
+                        <h3>3D Cardiac Reconstruction</h3>
+                        <p>
+                            Developing efficient multi-contrast CMR reconstruction methods
+                            to reduce scan burden while preserving clinically meaningful
+                            structural detail.
+                        </p>
+                    </div>
+                </article>
 
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-        </ul>
-    </section>
+                <article class="project">
+                    <img src="assets/images/diffusion-segmentation-result.jpg" alt="Diffusion-guided segmentation result" class="project-cover">
+                    <div class="project-body">
+                        <p class="tag">Missing Modality</p>
+                        <h3>Diffusion-Guided Segmentation</h3>
+                        <p>
+                            Improving segmentation robustness when MRI modalities are
+                            missing or unavailable through diffusion-guided multi-modal
+                            learning.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:hyx@123.com">hyx@123.com</a></p>
-    </section>
+        <section id="publication">
+            <div class="section-heading">
+                <p class="eyebrow">Research Output</p>
+                <h2>Publications</h2>
+            </div>
+            <div class="publication-list">
+                <article class="publication-card">
+                    <h3>A multi-task generative model for simultaneous post-contrast MR image synthesis and brainstem glioma segmentation</h3>
+                    <p>
+                        Generates post-contrast MR images while reducing exposure to
+                        gadolinium-based contrast agents and delineating brainstem glioma
+                        lesions.
+                    </p>
+                    <a href="https://doi.org/10.1016/j.mri.2024.07.009" target="_blank" rel="noreferrer">Read DOI</a>
+                </article>
+                <article class="publication-card">
+                    <h3>A Multi-Contrast Cardiac MRI Reconstruction Method Using an Advanced Unrolled Network Architecture</h3>
+                    <p>Accepted research on accelerated, high-quality multi-contrast CMR reconstruction.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">Capabilities</p>
+                <h2>Technical Stack</h2>
+            </div>
+            <div class="skill-grid">
+                <span>Python</span>
+                <span>PyTorch</span>
+                <span>TensorFlow</span>
+                <span>MONAI</span>
+                <span>OpenCV</span>
+                <span>Medical Imaging</span>
+                <span>Segmentation</span>
+                <span>Reconstruction</span>
+                <span>LaTeX</span>
+                <span>Git</span>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <h2>Research Collaboration</h2>
+                <p>For research discussion, academic collaboration, or project review, reach out through email or ORCID.</p>
+            </div>
+            <div class="contact-actions">
+                <a href="mailto:hyx@123.com" class="button primary">Email</a>
+                <a href="https://orcid.org/0009-0003-2264-7753" class="button">ORCID</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Huang Yanxin</p>
+        <p>&copy; 2026 Yanxin Huang</p>
     </footer>
     <script src="src/script.js"></script>
 </body>
 </html>
+
