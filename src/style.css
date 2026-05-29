@@ -1,19 +1,56 @@
+:root {
+    --ink: #1f2933;
+    --muted: #5f6f7a;
+    --line: #d9e2e8;
+    --panel: #f7fafb;
+    --accent: #007b83;
+    --accent-strong: #b73742;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--ink);
+    background: #ffffff;
 }
 
 header {
-    background: #f4f4f4;
+    background: #eef4f5;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px 48px;
+}
+
+header .container,
+section {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p,
+section p {
+    color: var(--muted);
 }
 
 header .name {
-    color: #007bff;
+    color: var(--accent);
 }
 
 .research-banner {
@@ -22,36 +59,38 @@ header .name {
     height: auto;
     margin: 0 auto 28px;
     border-radius: 6px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--line);
 }
 
 section {
-    padding: 20px;
-    margin: 20px 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 28px 20px;
+    border-bottom: 1px solid var(--line);
 }
 
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid var(--line);
     margin-bottom: 20px;
     object-fit: cover;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
 .project {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 16px;
-    border-radius: 5px;
-    text-align: center;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.project h3 {
+    color: var(--accent);
 }
 
 .pro-photo,
@@ -60,25 +99,26 @@ section {
     display: block;
     width: min(100%, 420px);
     height: auto;
-    border: 2px solid #ccc;
+    border: 1px solid var(--line);
     margin: 0 auto 20px;
 }
 
-#publication ul {
-    list-style-type: none;
-    padding: 0;
+#publication ul,
+#skills ul {
+    padding-left: 20px;
 }
 
 #publication li {
     margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 16px;
+    border-left: 4px solid var(--accent-strong);
+    background: var(--panel);
 }
 
 #publication a {
-    color: #007bff;
+    color: var(--accent);
     text-decoration: none;
+    font-weight: 700;
 }
 
 #publication a:hover {
@@ -87,8 +127,13 @@ section {
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
+    padding: 18px 0;
+    background: var(--ink);
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
     color: #fff;
 }
 
