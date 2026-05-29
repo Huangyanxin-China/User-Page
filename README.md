@@ -1,5 +1,7 @@
 # User-Page
 
+![Medical AI research banner](assets/images/research-banner.png)
+
 Personal portfolio page for Yanxin Huang, focused on medical image analysis,
 computer vision, and machine learning research.
 

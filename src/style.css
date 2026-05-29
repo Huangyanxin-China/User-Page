@@ -16,6 +16,15 @@ header .name {
     color: #007bff;
 }
 
+.research-banner {
+    display: block;
+    width: min(100%, 960px);
+    height: auto;
+    margin: 0 auto 28px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
 section {
     padding: 20px;
     margin: 20px 10px;
