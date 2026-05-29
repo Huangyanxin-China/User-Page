@@ -33,7 +33,6 @@ The site is served with GitHub Pages from the `main` branch.
 ## Maintenance Checklist
 
 - Add new publications with DOI links when available.
-- Replace placeholder contact details with a preferred academic email.
+- Add a preferred academic email when it is ready to publish.
 - Keep image names semantic and compress large figures before committing.
 - Keep the page focused on research outputs, not generic biography text.
-
