@@ -23,9 +23,9 @@ publications, skills, and contact information.
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Main portfolio page |
-| `style.css` | Page styling |
-| `script.js` | Small interactive behavior |
-| `*.jpg` | Profile, model, and result images used by the page |
+| `src/style.css` | Page styling |
+| `src/script.js` | Small interactive behavior |
+| `assets/images/` | Profile, model, and result images used by the page |
 
 ## Deployment
 
